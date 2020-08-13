@@ -1,0 +1,69 @@
+<!-- isso é uma teg <html> na tag <head> irá configurações do meu documento na tag <body>: Todo conteúdo visível na página -->
+
+<!-- <HTML> HiperText Hipertexto <a> Markup Marcação Language Linguagem -->
+
+<!-- Alt Z quebra a linha no tamanho da tela -->
+<!-- Ctrl + shift + P - Live Server -->
+<!-- ! enter vai aparecer todo o texto abaixo -->
+<!DOCTYPE html>
+<!-- lang é um atributo informando a linguagem "en" inglês -->
+<html lang="pt_br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#8257E5">
+
+        <title>Proffy | Sua plataforma de estudos online</title>
+
+        <!-- <style> h1 { color: blue } .red { color: brown } #page-landing { color: cornflowerblue } </style> -->
+
+        <!-- digito link e com o mouse vou em css -->
+        <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+        <link rel="stylesheet" href="\styles\main.css">
+        <link rel="stylesheet" href="\styles\partials\page-landing.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    </head>
+
+    <body id="page-landing">
+        <!-- <h1 style="color: red"> Proffy </h1> -->
+        <!-- <h1 class="red">Proffy</h1> -->
+        <div id="container">
+
+            <!-- só digitar .logo-container tab -->
+            <div class="logo-container">
+                <!-- só digita img enter -->
+                <img src="/images/logo.svg" alt="Proffy">
+                <h2>Sua plataforma de estudos online</h2>
+            </div>
+
+            <img class="hero-image" src="/images/landing.svg" alt="Plataforma de Estudos">
+
+            <!-- <button class="red">Estudar</button> -->
+            <!-- <button>Estudar</button> -->
+            <!-- <button>Dar aulas</button> -->
+
+            <!-- só digitar .button-containers enter -->
+            <div class="buttons-container">
+                <!-- Quando clicar no botão irá para study.html -->
+                <a class="study" href="/study">
+                    <img src="/images/icons/study.svg" alt="Estudar">
+                    Estudar
+                </a>
+                <a class="give-classes" href="/give-classes">
+                    <img src="/images/icons/give-classes.svg" alt="Dar aulas">
+                    Dar aulas
+                </a>
+            </div>
+
+            <!-- p.total-connections tab -->
+            <p class="total-connections">
+                Total de 285 conexões já realizadas
+                <img src="/images/icons/purple-heart.svg" alt="Coração roxo">
+            </p>
+        </div>
+
+    </body>
+
+</html>

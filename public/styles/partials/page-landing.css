@@ -1,0 +1,164 @@
+/* Para a tela Mobile */
+#page-landing {
+    background: var(--color-primary); /* cor de fundo no body */
+}
+
+#page-landing #container {
+    /* alterando as cores do texto */
+    color: var(--color-text-in-primary)
+}
+
+/* alterar a imagem na div que contém a classe logo-container */
+.logo-container img {
+    height: 10rem;
+}
+
+.logo-container {
+    text-align: center; /* Vai alinhar imagem e os textos da div */
+    margin-bottom: 3.2rem; /* A caixa logo-container com espaço abaixo da imagem hero-image */
+}
+
+.logo-container h2 {
+    font-weight: 500; /* vai diminuir o peso da fonte (bold) das letras que estavam com 700 que é o defaut do h2 */
+    font-size: 3.6rem; /* tamanho da fonte */
+    line-height: 4.5rem; /* altura da linha */
+    margin-top: 0.8rem; /* margim de cima do h2 */
+}
+
+.hero-image {
+    width: 100%; /* essa largura vai herdar do pai dele que é a div container */
+}
+
+.buttons-container {
+    display: flex; /* o display é usado junto com justify-content, um precisa do outro, trabalham juntos */
+    justify-content: center;
+    margin: 3.2rem 0; /* em cime e embaixo 3.2rem e nas laterais 0 */
+}
+
+.buttons-container a {
+    width: 30rem; /* largura */
+    height: 10.4rem; /* altura */
+
+    /* todos no sentido horário */
+    /* arredonda borda 1 3 para 2rem, 2 4 para 1rem */
+    /* border-radius: 2rem 1rem;  */
+    
+    /* arredonda borda 1 para 2rem, 2 4 para 1rem, 3 para 3rem */
+    /* border-radius: 2rem 1rem 3rem;  */
+
+    /* arredonda borda 1 para 2rem, 2 para 1rem, 3 para 3rem  4 para 4rem*/
+    /* border-radius: 2rem 1rem 3rem 4rem;  */
+    
+    /* Desafio do Mayk Brito */
+    /* border-radius: 2rem 0rem 0rem 0rem;  */
+
+    /* arredonda todas as bordas das caixas */
+    border-radius: 0.8rem; 
+    margin-right: 1.6rem;
+
+    font: 700 2.4rem Archivo;
+
+    /* vai alinhar os textos e os botões ao centro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Vai retirar a linha do link */
+    text-decoration: none;
+
+    /* Quando passar o mouse no botão */
+    transition: background 0.2s;
+
+    /* Vai dar a cor branca aos botões */
+    color: var(--color-button-text);
+}
+
+    /* tamanho da imagem dos botões*/
+.buttons-container a img {
+    width: 4rem;
+    margin-right: 2.4rem;
+}    
+
+    /* cor de fundo dos botões */
+.buttons-container a.study {
+    background: var(--color-primary-lighter);
+}
+
+.buttons-container a.study:hover {
+    background: var(--color-primary-light);
+    width: 48rem;
+    transform: translateY(-10px)
+
+}
+
+.buttons-container a.give-classes {
+    background: var(--color-secondary);
+    margin-right: 0;
+}
+
+.buttons-container a.give-classes:hover {
+    background: var(--color-secondary-dark);
+    width: 48rem;
+    transform: translateY(-10px)
+}
+
+.total-connections {
+    font-size: 1.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-connections img{
+    margin-left: 0.8rem;
+}
+
+@media (max-width: 699px) {
+    :root {
+        font-size: 40%; /* modificar as medidas rem */
+    }
+}
+
+/* Para a tela Web, minimo 1100 pra cima */
+@media (min-width: 1100px) {
+    #page-landing #container {
+        max-width: 1100px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 350px 1fr;
+        grid-template-areas: 
+        "proffy image image"
+        "button button texting";
+        column-gap: 87px;
+        row-gap: 86px;
+    }
+
+    .logo-container {
+        grid-area: proffy;
+        text-align: initial;
+        align-self: center;
+        margin: 0;
+    }   
+    
+    .logo-container img {
+        height: 127px;
+    }
+
+    .hero-image {
+        grid-area: image;
+        height: 350px;
+    }
+
+    .buttons-container {
+        grid-area: button;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .total-connections {
+        grid-area: texting;
+        justify-self: end;
+        font-size: 1.2rem;
+    }
+}
