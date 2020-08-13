@@ -1,6 +1,6 @@
 ![1 - NLW #02 - 2560x1080](https://user-images.githubusercontent.com/64690628/90169841-84f85200-dd75-11ea-9951-df57cbce45c0.jpg)
 ---
-
+![Pattern](https://user-images.githubusercontent.com/64690628/90170086-e0c2db00-dd75-11ea-802b-c39017e78313.png)
 ---
 # Indice
 
@@ -16,13 +16,13 @@ Projeto que foi criado dentro do curso **Next Level Week** da empresa **Rocketse
 ---
 ## 🚀 Tecnologias utilizadas
 
-O projeto foi desenvolvido utilizando as seguintes tecnologias Frontend
-
+O projeto foi desenvolvido utilizando as seguintes tecnologias 
+Frontend
 - HTML
 - CSS
 - Javascript
 
-O projeto foi desenvolvido utilizando as seguintes tecnologias Backend
+Backend
 - Javascript
 - Node.js 
 - Git Bash 
